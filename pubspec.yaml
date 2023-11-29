@@ -49,6 +49,7 @@ dev_dependencies:
   shared_preferences: ^2.1.0 # 本地存储
   dio: ^5.1.1 # 网络请求
   flutter_screenutil: ^5.7.0 # 屏幕适配
+  banner_carousel: ^1.2.1 #轮播图
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -64,6 +65,8 @@ flutter:
     - family: iconfont
       fonts:
         - asset: image/iconfont.ttf
+  assets:
+    - image/ic_disk_place_holder.webp
 
   # To add assets to your application, add an assets section, like this:
   # assets:

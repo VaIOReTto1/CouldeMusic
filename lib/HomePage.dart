@@ -2,6 +2,7 @@ import 'package:cloude_music/config/config.dart';
 import 'package:flutter/material.dart';
 
 import 'explore_page/search.dart';
+import 'explore_page/banner.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -23,6 +24,7 @@ class _HomePageState extends State<HomePage> {
                 boxShadow: UIConfig.backgroundColor,
               ),
               child: const Search()),
+          RecommendBanner()
         ],
       ),
     );
