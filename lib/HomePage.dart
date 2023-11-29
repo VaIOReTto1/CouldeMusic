@@ -1,4 +1,5 @@
 import 'package:cloude_music/config/config.dart';
+import 'package:cloude_music/explore_page/recommend_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'explore_page/search.dart';
@@ -24,7 +25,8 @@ class _HomePageState extends State<HomePage> {
                 boxShadow: UIConfig.backgroundColor,
               ),
               child: const Search()),
-          RecommendBanner()
+          const RecommendBanner(),
+          const RecommendBar(),
         ],
       ),
     );
