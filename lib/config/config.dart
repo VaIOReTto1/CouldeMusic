@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,10 +13,11 @@ class UIConfig {
   static final double listImageSize = ScreenUtil().setSp(350); //歌单图片大小
   static final double bottomIconSize = ScreenUtil().setSp(76); //底部导航栏图标大小
   static final double recordImageSize = ScreenUtil().setSp(120); //播放歌曲专辑大小
+  static final double listIconSize = ScreenUtil().setSp(200); //歌单图标大小
 
   //字体大小
   static final double searchFontSize = ScreenUtil().setSp(40); //搜索框字体大小
-  static final double recommendFontSize = ScreenUtil().setSp(30); //推荐栏字体大小
+  static final double recommendFontSize = ScreenUtil().setSp(35); //推荐栏字体大小
   static final double listFontSize = ScreenUtil().setSp(45); //推荐歌单字体大小
 
   //色彩
@@ -27,4 +26,9 @@ class UIConfig {
     BoxShadow(color: Color(0xffe5e9fc))
   ];
   static const int searchColor = 0xffdbdcfb;
+
+  //圆角及边距
+  static final double radius = ScreenUtil().setSp(25); //圆角
+  static final double listLRPadding = ScreenUtil().setSp(16); //歌单左右间距
+  static final double listTBpadding = ScreenUtil().setSp(16); //歌单上下间距
 }

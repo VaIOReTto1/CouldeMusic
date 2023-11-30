@@ -3,8 +3,8 @@ import 'dart:convert';
 import '../model/recommend_list_model.dart';
 
 import 'package:dio/dio.dart';
-class RecommendListRepository{
-  RecommendListModel model=RecommendListModel();
+class RecommendListRepository {
+  RecommendListModel model = RecommendListModel();
 
   Future<void> getData() async {
     try {
@@ -13,10 +13,11 @@ class RecommendListRepository{
       model.listName.clear();
       model.picUrl.clear();
       model.playCount.clear();
-      for (int i = 0; i < 6; i++) {
-        model.listName.add(map["result"][i]['name']);
-        model.playCount.add(map["result"][i]['playCount'].substring(0, map["result"][i]['playCount'].length - 4) + 'w');
-        model.picUrl.add(map["result"][i]['picUrl']);
+      for (var item in map["result"]) {
+        String playCount = item['playCount'].toString();
+        model.listName.add(item['name']);
+        model.playCount.add('${playCount.substring(0, playCount.length - 4)}w');
+        model.picUrl.add(item['picUrl']);
       }
     } catch (e) {
       print(e);

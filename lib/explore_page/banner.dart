@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:cloude_music/config/config.dart';
 import 'package:cloude_music/model/banner_model.dart';
 import 'package:cloude_music/repository/banner_repository.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +71,7 @@ class _RecommendBannerState extends State<RecommendBanner> {
                   },
                   itemBuilder: (context, index) {
                     return ClipRRect(
-                      borderRadius: BorderRadius.circular(18),
+                      borderRadius: BorderRadius.circular(UIConfig.radius),
                       child: Image.network(
                         bannerRepository.model.imageUrl[index],
                         fit: BoxFit.fitWidth,
