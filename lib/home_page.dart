@@ -28,9 +28,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: IndexedStack( //使用IndexedStack作为body
-        index: _currentPageIndex, //当前显示的子组件索引
-        children: _pages, //子组件列表
+      body: IndexedStack(
+        index: _currentPageIndex,
+        children: _pages,
       ),
       bottomNavigationBar: SizedBox(
         height: MediaQuery.of(context).size.height * 0.08,

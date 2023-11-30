@@ -1,10 +1,8 @@
 import 'dart:async';
 import 'package:cloude_music/config/config.dart';
-import 'package:cloude_music/model/banner_model.dart';
 import 'package:cloude_music/repository/banner_repository.dart';
 import 'package:flutter/material.dart';
 
-import '../repository/banner_repository.dart';
 
 class RecommendBanner extends StatefulWidget {
   const RecommendBanner({super.key});
