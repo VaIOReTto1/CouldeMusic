@@ -36,12 +36,12 @@ class _SearchState extends State<Search> {
               cursorColor: const Color(UIConfig.searchColor),
               style: const TextStyle(color: Colors.black),
               decoration: InputDecoration(
-                contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                   hintText: "你是我为数不多的骄傲",
                   border: InputBorder.none,
                   prefixIcon: Icon(
                     Icons.search,
-                    size: UIConfig.searchIconSize*1.2,
+                    size: UIConfig.searchIconSize * 1.2,
                   ),
                   suffixIcon: Icon(
                     MyIcons.QRCode,

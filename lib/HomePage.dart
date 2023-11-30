@@ -1,9 +1,12 @@
 import 'package:cloude_music/config/config.dart';
 import 'package:cloude_music/explore_page/recommend_bar.dart';
+import 'package:cloude_music/model/banner_model.dart';
+import 'package:cloude_music/repository/banner_repository.dart';
 import 'package:flutter/material.dart';
 
 import 'explore_page/search.dart';
 import 'explore_page/banner.dart';
+import 'explore_page/sing_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,6 +16,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +36,7 @@ class _HomePageState extends State<HomePage> {
               child: const Search()),
           const RecommendBanner(),
           const RecommendBar(),
+          const SingList(),
         ],
       ),
     );

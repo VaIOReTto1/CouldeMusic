@@ -10,10 +10,26 @@ class RecommendBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        Icon(MyIcons.daily_recommend,size: UIConfig.recommendIconSize*1.1,),
-        Icon(MyIcons.radio,size: UIConfig.recommendIconSize*1.1,),
-        Icon(MyIcons.list,size: UIConfig.recommendIconSize*1.3,),
-        Icon(MyIcons.ranking,size: UIConfig.recommendIconSize,)
+        Icon(
+          MyIcons.daily_recommend,
+          size: UIConfig.recommendIconSize * 1.1,
+          color: Colors.red[500],
+        ),
+        Icon(
+          MyIcons.radio,
+          size: UIConfig.recommendIconSize * 1.1,
+          color: Colors.red[500],
+        ),
+        Icon(
+          MyIcons.list,
+          size: UIConfig.recommendIconSize * 1.3,
+          color: Colors.red[500],
+        ),
+        Icon(
+          MyIcons.ranking,
+          size: UIConfig.recommendIconSize,
+          color: Colors.red[500],
+        )
       ],
     );
   }
