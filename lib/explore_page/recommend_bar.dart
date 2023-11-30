@@ -33,6 +33,7 @@ class RecommendBar extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.w100,
               fontSize: UIConfig.recommendFontSize * 0.8,
+                color: Color(0xffa8a8a8)
             ),
           ),
         )

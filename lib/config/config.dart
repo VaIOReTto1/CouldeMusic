@@ -13,6 +13,7 @@ class UIConfig {
   static final double listImageSize = ScreenUtil().setSp(350); //歌单图片大小
   static final double bottomIconSize = ScreenUtil().setSp(76); //底部导航栏图标大小
   static final double recordImageSize = ScreenUtil().setSp(120); //播放歌曲专辑大小
+  static final double recommendSingImageSize = ScreenUtil().setSp(160); //推荐歌曲图片大小
   static final double listIconSize = ScreenUtil().setSp(200); //歌单图标大小
 
   //字体大小

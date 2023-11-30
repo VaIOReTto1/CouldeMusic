@@ -18,7 +18,7 @@ class RecommendSongRepository {
         model.songName.add(item['name']);
         model.picUrl.add(item['picUrl']);
         String singerName = "";
-        for (var singer in map['result']['artists']) {
+        for (var singer in item['song']['artists']) {
           singerName += "/${singer['name']}";
         }
         model.singerName.add(singerName.substring(1));

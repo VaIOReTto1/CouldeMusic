@@ -53,7 +53,7 @@ class SongListImage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
             child: Text(
               listName,
-              style: TextStyle(fontSize: UIConfig.recommendFontSize),
+              style: TextStyle(fontSize: UIConfig.recommendFontSize,color: const Color(0xff3b424a)),
               maxLines: 2,
             ),
           )

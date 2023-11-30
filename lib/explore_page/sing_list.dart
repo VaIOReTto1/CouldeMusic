@@ -1,6 +1,7 @@
 import 'package:cloude_music/config/config.dart';
 import 'package:cloude_music/config/song_list_image.dart';
 import 'package:cloude_music/repository/recommend_list_repository.dart';
+import 'package:cloude_music/repository/recommend_song_repository.dart';
 import 'package:flutter/material.dart';
 
 class SingList extends StatefulWidget {
@@ -17,8 +18,7 @@ class _SingListState extends State<SingList> {
   void initState() {
     // TODO: implement initState
     super.initState();
-   recommendListRepository.getData();
-    print(recommendListRepository.model.playCount.length);
+    recommendListRepository.getData();
   }
 
   @override
