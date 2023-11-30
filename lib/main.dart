@@ -1,8 +1,9 @@
 import 'package:cloude_music/config/config.dart';
+import 'package:cloude_music/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'HomePage.dart';
+import 'explore_page/explore_page.dart';
 
 void main() {
   runApp(const MyApp());
