@@ -25,11 +25,11 @@ class UIConfig {
   //色彩
   static const List<Color> backgroundColor = [
     Color(0xffe1d7f5),Color(0xffece5fc),Color(0xfff7e5f1),Color(0xffffffff)
-  ];
+  ]; //
   static const List<Color> searchColor = [
     Color(0xffd8dbfa),Color(0xffe8d8fc),Color(0xfff1d9f3)
   ];
-  static const Color iconColor = Color(0xfffc5a5b);
+  static const Color iconColor = Color(0xfffc5a5b); //图标颜色
 
   //圆角及边距
   static final double radius = ScreenUtil().setSp(25); //圆角

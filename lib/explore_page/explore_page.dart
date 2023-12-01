@@ -15,15 +15,17 @@ class ExplorePage extends StatefulWidget {
 }
 
 class _ExplorePageState extends State<ExplorePage> {
+  // 创建滚动控制器
   final ScrollController _scrollController = ScrollController();
+  // 用于控制背景渐变的状态变量
   bool _isScroll = false;
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
+    // 监听滚动事件
     _scrollController.addListener(() {
-      print(_scrollController.offset);
+      // 根据滚动位置更改背景渐变状态
       if (_scrollController.offset == 0 && _isScroll == true) {
         setState(() {
           _isScroll = false;
@@ -42,8 +44,10 @@ class _ExplorePageState extends State<ExplorePage> {
       body: Column(
         children: [
           Container(
+            // 设置padding以避开状态栏
               padding: EdgeInsets.fromLTRB(
                   0, MediaQuery.of(context).padding.top, 0, 0),
+              // 根据滚动状态设置背景渐变
               decoration: BoxDecoration(
                   gradient: RadialGradient(
                       colors: _isScroll
@@ -53,8 +57,9 @@ class _ExplorePageState extends State<ExplorePage> {
                       center: Alignment.topCenter)),
               child: Column(
                 children: [
-                  const Search(),
+                  const Search(), // 搜索栏
                   SingleChildScrollView(
+                    // 滚动视图
                     controller: _scrollController,
                     physics: const BouncingScrollPhysics(
                         parent: AlwaysScrollableScrollPhysics()),
@@ -63,10 +68,10 @@ class _ExplorePageState extends State<ExplorePage> {
                       child: ListView(
                         padding: EdgeInsets.zero,
                         children: const [
-                          RecommendBanner(),
-                          RecommendBar(),
-                          SingList(),
-                          RecommendSong(),
+                          RecommendBanner(), // 横幅广告
+                          RecommendBar(), // 推荐栏
+                          SingList(), // 推荐歌单
+                          RecommendSong(), // 推荐歌曲
                         ],
                       ),
                     ),
