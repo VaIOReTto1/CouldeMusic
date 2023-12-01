@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class UIConfig {
@@ -14,7 +15,7 @@ class UIConfig {
   static final double bottomIconSize = ScreenUtil().setSp(76); //底部导航栏图标大小
   static final double recordImageSize = ScreenUtil().setSp(120); //播放歌曲专辑大小
   static final double recommendSingImageSize = ScreenUtil().setSp(160); //推荐歌曲图片大小
-  static final double listIconSize = ScreenUtil().setSp(200); //歌单图标大小
+  static final double listIconSize = ScreenUtil().setSp(80); //歌单图标大小
 
   //字体大小
   static final double searchFontSize = ScreenUtil().setSp(40); //搜索框字体大小
@@ -22,11 +23,13 @@ class UIConfig {
   static final double listFontSize = ScreenUtil().setSp(45); //推荐歌单字体大小
 
   //色彩
-  static const List<BoxShadow> backgroundColor = [
-    BoxShadow(color: Color(0xfff8f9fd)),
-    BoxShadow(color: Color(0xffe5e9fc))
+  static const List<Color> backgroundColor = [
+    Color(0xffe1d7f5),Color(0xffece5fc),Color(0xfff7e5f1),Color(0xffffffff)
   ];
-  static const int searchColor = 0xffdbdcfb;
+  static const List<Color> searchColor = [
+    Color(0xffd8dbfa),Color(0xffe8d8fc),Color(0xfff1d9f3)
+  ];
+  static const Color iconColor = Color(0xfffc5a5b);
 
   //圆角及边距
   static final double radius = ScreenUtil().setSp(25); //圆角

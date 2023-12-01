@@ -1,4 +1,5 @@
 import 'package:cloude_music/config/config.dart';
+import 'package:cloude_music/config/icon.dart';
 import 'package:flutter/material.dart';
 
 class SongListImage extends StatelessWidget {
@@ -36,14 +37,14 @@ class SongListImage extends StatelessWidget {
                     playCount,
                     style: TextStyle(
                         fontSize: UIConfig.recommendFontSize,
-                        color: Colors.white,
+                        color: Color(0xffdddddd),
                         fontWeight: FontWeight.bold),
                   )),
               Positioned(
-                  bottom: -17,
-                  right: -17,
+                  bottom: 0,
+                  right: 0,
                   child: Icon(
-                    Icons.arrow_right_rounded,
+                    MyIcons.run,
                     size: UIConfig.listIconSize,
                     color: Colors.white,
                   ))

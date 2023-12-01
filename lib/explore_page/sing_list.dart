@@ -59,6 +59,7 @@ class _SingListState extends State<SingList> {
                 padding: const EdgeInsets.all(10),
                 scrollDirection: Axis.horizontal,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: List.generate(
                       recommendListRepository.model.listName.length, (index) {
                     return SongListImage(

@@ -10,7 +10,7 @@ class RecommendBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        buildColumn(MyIcons.daily_recommend, "每日推荐"),
+        buildColumn(MyIcons.daily_recommend, "每日推荐",size: 0.9),
         buildColumn(MyIcons.radio, "私人漫游"),
         buildColumn(MyIcons.list, "歌单"),
         buildColumn(MyIcons.ranking, "排行榜")
@@ -18,13 +18,13 @@ class RecommendBar extends StatelessWidget {
     );
   }
 
-  Column buildColumn(IconData icon, String text) {
+  Column buildColumn(IconData icon, String text, {double size = 1 }) {
     return Column(
       children: [
         Icon(
           icon,
-          size: UIConfig.recommendIconSize * 1.1,
-          color: Colors.red[500],
+          size: UIConfig.recommendIconSize * size,
+          color: UIConfig.iconColor,
         ),
         Padding(
           padding: const EdgeInsets.fromLTRB(0, 4, 0, 0),

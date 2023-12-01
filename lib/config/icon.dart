@@ -25,4 +25,12 @@ class MyIcons {
       IconData(0xe7e3, fontFamily: "iconfont", matchTextDirection: true);
   static const IconData favorite =
       IconData(0xe6cf, fontFamily: "iconfont", matchTextDirection: true);
+  static const IconData run =
+      IconData(0xe620, fontFamily: "iconfont", matchTextDirection: true);
+  static const IconData run_list =
+      IconData(0xea82, fontFamily: "iconfont", matchTextDirection: true);
+  static const IconData vedio =
+      IconData(0xe665, fontFamily: "iconfont", matchTextDirection: true);
+  static const IconData song_run =
+      IconData(0xec61, fontFamily: "iconfont", matchTextDirection: true);
 }

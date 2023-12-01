@@ -1,3 +1,4 @@
+import 'package:cloude_music/config/icon.dart';
 import 'package:flutter/material.dart';
 
 import 'config.dart';
@@ -29,17 +30,24 @@ class SongList extends StatelessWidget {
                 height: UIConfig.recommendSingImageSize,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(14.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start, // 对齐文本到左边
-                mainAxisAlignment: MainAxisAlignment.center, // 垂直居中
-                children: [
-                  Text(songName,style: const TextStyle(fontWeight: FontWeight.bold),),
-                  Text(singerName,style: const TextStyle(color: Color(0xffa8a8a8)),),
-                ],
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(14.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start, // 对齐文本到左边
+                  mainAxisAlignment: MainAxisAlignment.center, // 垂直居中
+                  children: [
+                    Text(songName,style: const TextStyle(fontWeight: FontWeight.bold),),
+                    Text(singerName,style: const TextStyle(color: Color(0xffa8a8a8)),),
+                  ],
+                ),
               ),
             ),
+            Icon(
+              MyIcons.vedio,
+              size: UIConfig.recommendIconSize*0.8,
+              color: const Color(0xffaaaaa1),
+            )
           ],
         ),
       );
